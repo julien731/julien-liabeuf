@@ -122,7 +122,6 @@ a:hover {
     color: #333333;
 }
 
-
 a.disabled {
     pointer-events: none;
 }
@@ -591,6 +590,10 @@ hr.fullwd {
     content: "";
 }
 
+.blog-style-one .blog-item img {
+    max-width: 100%;
+}
+
 .blog-item img.content {
     width: 100%;
     height: auto;
@@ -692,6 +695,7 @@ hr.fullwd {
     -khtml-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
+    max-width: 100%;
 }
 
 .blog-style-one .blog-item .wp-caption img {
