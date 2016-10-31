@@ -990,6 +990,14 @@ hr.fullwd {
     font-weight: 500;
 }
 
+.comments-area .nav-links .nav-previous {
+    float: left;
+}
+
+.comments-area .nav-links .nav-next {
+    float: right;
+}
+
 /***************************************************************************/
 /* IMAGE GALLERY */
 /***************************************************************************/

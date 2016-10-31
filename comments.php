@@ -46,7 +46,13 @@ if ( ! defined( 'WPINC' ) ) {
 
 		<div class="comments">
 
-			<?php the_comments_navigation(); ?>
+			<?php
+			$comments_nav_args = array(
+				'prev_text'          => __( '&larr; Older comments' ),
+				'next_text'          => __( 'Newer comments &rarr;' ),
+			);
+
+			the_comments_navigation( $comments_nav_args ); ?>
 
 			<hr class="small">
 
@@ -62,7 +68,7 @@ if ( ! defined( 'WPINC' ) ) {
 				?>
 			</ul><!-- .comment-list -->
 
-			<?php the_comments_navigation(); ?>
+			<?php the_comments_navigation( $comments_nav_args ); ?>
 
 		</div> <!-- end of .comments -->
 	<?php endif;

@@ -259,13 +259,38 @@ function the_reader_comments( $comment, $args, $depth ) { ?>
 						'add_below' => 'comment',
 						'depth'     => $depth,
 						'max_depth' => $args['max_depth'],
-					) ) ), 1 ); ?>
+					) ) ), 1 );
+					edit_comment_link( 'Edit', ' - ' ); ?>
 				</p>
 			</div>
 		</div>
 		<hr class="small">
 
 <?php }
+
+add_filter( 'navigation_markup_template', 'the_reader_comments_nav_template', 10, 2 );
+/**
+ * Remove the comment navigation title
+ *
+ * @since 1.0
+ *
+ * @param string $template Comments navigation template
+ * @param string $class    Navigation class
+ *
+ * @return string
+ */
+function the_reader_comments_nav_template( $template, $class ) {
+
+	if ( 'comment-navigation' !== $class ) {
+		return $template;
+	}
+
+	return '
+	<nav class="navigation %1$s clearfix" role="navigation">
+		<div class="nav-links">%3$s</div>
+	</nav>';
+
+}
 
 /**
  * Remove wp_trim_excerpt from the excerpt in order to generate an improved version
