@@ -45,10 +45,10 @@ get_header(); ?>
 					} elseif ( is_singular( 'post' ) ) { ?>
 
 						<div class="row">
-							<div class="col-md-6 text-left">
+							<div class="col-md-12 text-left">
 								<?php previous_post_link( '<h5>Previous post</h5> <p class="lead">&larr; %link</p>' ); ?>
 							</div>
-							<div class="col-md-6 text-right">
+							<div class="col-md-12 text-right">
 								<?php next_post_link( '<h5>Next post</h5> <p class="lead">%link &rarr;</p>' ); ?>
 							</div>
 						</div>
