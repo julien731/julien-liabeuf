@@ -36,3 +36,5 @@ gulp.task('js', function () {
         .pipe(uglify())
         .pipe(gulp.dest('assets/js/'));
 });
+
+gulp.task('assets', ['css', 'js']);
