@@ -118,6 +118,7 @@ function the_reader_assets() {
 	wp_enqueue_script( 'the_reader-dist' );
 
 	// Enqueue styles
+	wp_enqueue_style( 'the_reader-gfonts' );
 	wp_enqueue_style( 'the_reader-dist' );
 
 }
