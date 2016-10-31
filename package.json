@@ -1,0 +1,22 @@
+{
+  "name": "julien-liabeuf",
+  "version": "1.0.0",
+  "description": "Blog theme for julienliabeuf.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julien731/julien-liabeuf-theme.git"
+  },
+  "author": "Julien Liabeuf",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/julien731/julien-liabeuf-theme/issues"
+  },
+  "homepage": "https://github.com/julien731/julien-liabeuf-theme#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "~2.0.13",
+    "gulp-concat-css": "~2.3.0",
+    "gulp-concat-util": "^0.5.5",
+    "gulp-uglify": "^2.0.0"
+  }
+}

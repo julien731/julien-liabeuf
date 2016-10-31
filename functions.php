@@ -104,6 +104,7 @@ function the_reader_assets() {
 	wp_register_style( 'the_reader-color', get_template_directory_uri() . '/assets/css/colors/lime.css', null, '1.0', 'all' );
 	wp_register_style( 'the_reader-responsive', get_template_directory_uri() . '/assets/css/responsive.css', null, '1.0', 'all' );
 	wp_register_style( 'the_reader-gfonts', '//fonts.googleapis.com/css?family=Raleway:400,300,500,600,700', null, '1.0', 'all' );
+	wp_register_style( 'the_reader-dist', get_template_directory_uri() . '/assets/css/dist.css', null, '1.0', 'all' );
 
 	// Register Scripts
 	wp_register_script( 'the_reader-bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array( 'jquery' ), '3.2.0', true );
@@ -111,24 +112,13 @@ function the_reader_assets() {
 	wp_register_script( 'the_reader-fitvids', get_template_directory_uri() . '/assets/js/jquery.fitvids.js', array( 'jquery' ), '1.1', true );
 	wp_register_script( 'the_reader-custom', get_template_directory_uri() . '/assets/js/custom.js', array( 'jquery', 'the_reader-media', 'the_reader-fitvids' ), '1.0', true );
 	wp_register_script( 'the_reader-prism', get_template_directory_uri() . '/assets/vendors/prism/prism.js', array( 'jquery' ), '1.0', true );
+	wp_register_script( 'the_reader-dist', get_template_directory_uri() . '/assets/js/dist.js', array( 'jquery' ), '1.0', true );
 
 	// Enqueue scripts
-	wp_enqueue_script( 'the_reader-bootstrap' );
-	wp_enqueue_script( 'the_reader-media' );
-	wp_enqueue_script( 'the_reader-fitvids' );
-	wp_enqueue_script( 'the_reader-custom' );
-	wp_enqueue_script( 'the_reader-prism' );
+	wp_enqueue_script( 'the_reader-dist' );
 
 	// Enqueue styles
-	wp_enqueue_style( 'the_reader-bootstrap' );
-	wp_enqueue_style( 'the_reader-gfonts' );
-	wp_enqueue_style( 'the_reader-flaticons' );
-	wp_enqueue_style( 'the_reader-nprogress' );
-	wp_enqueue_style( 'the_reader-mediaelementplayer' );
-	wp_enqueue_style( 'the_reader-style' );
-	wp_enqueue_style( 'the_reader-color' );
-	wp_enqueue_style( 'the_reader-responsive' );
-	wp_enqueue_style( 'the_reader-prism' );
+	wp_enqueue_style( 'the_reader-dist' );
 
 }
 
