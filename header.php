@@ -27,37 +27,6 @@ if ( ! defined( 'WPINC' ) ) {
 		<meta name="author" content="Julien Liabeuf">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<!-- =========================
-		   STYLESHEETS
-		============================== -->
-		<!-- BOOTSTRAP CSS -->
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css">
-
-		<!-- GOOGLE FONTS -->
-		<link href='//fonts.googleapis.com/css?family=Raleway:400,300,500,600,700' rel='stylesheet'>
-
-		<!-- FLAT ICON -->
-		<link href='<?php echo get_template_directory_uri(); ?>/assets/css/flaticon.css' rel='stylesheet'>
-		<link href='<?php echo get_template_directory_uri(); ?>/assets/css/nprogress.css' rel='stylesheet'>
-
-		<!-- MEDIA ELEMENT AND PLAYER -->
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/mediaelementplayer.css">
-
-		<!-- CUSTOM CSS -->
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-
-		<!-- COLOR SCEEMS -->
-		 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/colors/lime.css">
-
-		<!-- RESPONSIVE FIXES -->
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/responsive.css">
-
-		<!--[if lt IE 9]>
-		<script src="<?php echo get_template_directory_uri(); ?>/assets/js/html5shiv.js"></script>
-		<script src="<?php echo get_template_directory_uri(); ?>/assets/js/respond.min.js"></script>
-		<![endif]-->
-
 		<!-- PINGBACK URL -->
 		<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
 			<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
