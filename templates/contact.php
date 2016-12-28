@@ -55,10 +55,10 @@ get_header(); ?>
 
 					<?php endwhile; ?>
 
-					<section class="comments-area contact-form-wrapper">
-						<div class="comment-form">
+					<section class="comments-area">
+						<div class="comment-form" id="contact-form-wrapper">
 							<h3 id="reply-title">Get In Touch</h3>
-							<form action="https://formspree.io/julien@liabeuf.fr" method="post" class="contact-form" id="contact-form">
+							<form action="<?php echo get_permalink(); ?>>" method="post" class="contact-form" id="contact-form">
 								<div class="comment-input">
 									<input type="text" name="name" id="name" placeholder="Full Name*" class="form-input" value="" aria-required="true" required>
 								</div>
@@ -69,9 +69,9 @@ get_header(); ?>
 									<textarea name="comment" id="commenter-message" rows="8" placeholder="How can I help you?" class="form-input" aria-required="true" required></textarea>
 								</div>
 								<p class="form-submit">
-									<input type="hidden" name="_subject" value="New message from julienliabeuf.com"/>
+									<input type="hidden" name="_subject" value="New message sent from the blog"/>
 									<input type="text" name="_gotcha" style="display:none">
-									<input name="submit" type="submit" id="submit" class="btn btn-prime btn-mid" value="Send">
+									<input name="submit" type="submit" id="contact-form-submit" class="btn btn-prime btn-mid" value="Send">
 								</p>
 							</form>
 						</div>
