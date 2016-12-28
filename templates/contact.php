@@ -58,7 +58,7 @@ get_header(); ?>
 					<section class="comments-area">
 						<div class="comment-form" id="contact-form-wrapper">
 							<h3 id="reply-title">Get In Touch</h3>
-							<form action="<?php echo get_permalink(); ?>>" method="post" class="contact-form" id="contact-form">
+							<form action="<?php echo get_permalink(); ?>" method="post" class="contact-form" id="contact-form">
 								<div class="comment-input">
 									<input type="text" name="name" id="name" placeholder="Full Name*" class="form-input" value="" aria-required="true" required>
 								</div>
