@@ -60,7 +60,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /***************************************************************************/
 body {
     background: #f6f6f6;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
@@ -68,7 +68,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 10px 0 15px 0;
 }
 
@@ -79,7 +79,7 @@ h1 {
 h2 {
     line-height: 1.3em;
     color: #1a1a1a;
-    font-weight: 600;
+    font-weight: 500;
     margin: 10px 0 15px 0;
 }
 
@@ -99,7 +99,7 @@ h5 {
     margin-top: 0;
     margin-bottom: 20px;
     color: #6e6e6e;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 h6 {
@@ -278,7 +278,7 @@ hr.fullwd {
 
 .input-group .input-group-btn .btn-prime {
     border: 0;
-    font-weight: 600;
+    font-weight: 500;
     height: 40px;
     transition: all 0.3s;
 }
@@ -289,7 +289,7 @@ hr.fullwd {
 
 .social-icons p {
     float: left;
-    font-weight: 600;
+    font-weight: 500;
     margin-right: 10px;
     margin-top: 3px;
 }
@@ -383,7 +383,7 @@ hr.fullwd {
 
 .header .navbar .main-navigation > ul > li a {
     padding: 10px 15px;
-    font-weight: 600;
+    font-weight: 500;
     color: #666b74;
 }
 
@@ -831,7 +831,7 @@ hr.fullwd {
     text-transform: none;
     color: #2e3137;
     margin-bottom: 10px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .blog-style-one .about-author .desc p {
@@ -934,7 +934,7 @@ hr.fullwd {
 
 .comments-area .comments > ul li p a.author {
     color: #818896;
-    font-weight: 600;
+    font-weight: 500;
     margin-right: 10px;
 }
 

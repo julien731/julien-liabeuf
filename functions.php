@@ -103,7 +103,7 @@ function the_reader_assets() {
 	wp_register_style( 'the_reader-style', get_template_directory_uri() . '/style.css', null, '1.0', 'all' );
 	wp_register_style( 'the_reader-color', get_template_directory_uri() . '/assets/css/colors/lime.css', null, '1.0', 'all' );
 	wp_register_style( 'the_reader-responsive', get_template_directory_uri() . '/assets/css/responsive.css', null, '1.0', 'all' );
-	wp_register_style( 'the_reader-gfonts', '//fonts.googleapis.com/css?family=Raleway:400,300,500,600,700', null, '1.0', 'all' );
+	wp_register_style( 'the_reader-gfonts', '//fonts.googleapis.com/css?family=Roboto:300,400,500,700', null, '1.0', 'all' );
 	wp_register_style( 'the_reader-dist', get_template_directory_uri() . '/assets/css/dist.css', null, '1.0', 'all' );
 
 	// Register Scripts
